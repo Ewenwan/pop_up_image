@@ -1,3 +1,9 @@
+#  概述
+    好像用LSD SLAM的双目图像 得到深度信息 然后直接构建三维环境（反正是低纹理地区 很好建）
+
+    在低纹理条件下（这里可能已经是3D图了？）提取边界线，然后选择地线（这个例子里面分割出地面和门 ） ，
+    然后构建三维建模 感觉只适用于室内的没什么杂物的环境内，规格化场景可以使用。
+
 # Pop Single Image #
 This code contains algorithm to pop up a 3D plane model from images. Given a RGB and ground segmentation image, the algorithm detects edges and selecs the ground-wall boundary edges then pops up 3D point cloud.
 
